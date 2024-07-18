@@ -15,3 +15,5 @@ A few resources to get you started if this is your first Flutter project:
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
+## Releases
+Checkout Pre-Built Binary in [Releases](https://github.com/C9-Labs/newsdrip/releases)
