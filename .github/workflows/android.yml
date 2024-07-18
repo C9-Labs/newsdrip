@@ -25,7 +25,7 @@ jobs:
       uses: subosito/flutter-action@v2.14.0
 
     - name: Buid APK
-      run: fluuter build apk & ls
+      run: flutter build apk & ls
     - name: Grant execute permission for gradlew
       working-directory: ./android
       run: chmod +x gradlew
