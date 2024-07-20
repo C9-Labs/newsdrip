@@ -18,8 +18,8 @@ A few resources to get you started if this is your first Flutter project:
 ## Releases
 Checkout Pre-Built Binary in [Releases](https://github.com/C9-Labs/newsdrip/releases)
 
-Windows: [release.zip ](https://github.com/C9-Labs/newsdrip/releases/download/v1/newsdrip_windows.zip
-)
+Windows: [release.zip ](https://github.com/C9-Labs/newsdrip/releases/download/v1/newsdrip_windows.zip)
+
 Android: [newsdrip.apk](https://github.com/C9-Labs/newsdrip/releases/download/v1/newsdrip-release.apk)
 
 Linux: 
