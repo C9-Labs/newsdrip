@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: Install Dependencies
-      run : sudo apt-get install libgtk-3-0 libblkid1 liblzma5
+      run : sudo apt-get install libgtk-3-0 libblkid1 liblzma5 build-tools
       
     - uses: actions/checkout@v4
     - name: set up JDK 11
@@ -22,6 +22,7 @@ jobs:
         java-version: '11'
         distribution: 'temurin'
         cache: gradle
+        
     - name: Flutter action
       # You may pin to the exact commit or the version.
       # uses: subosito/flutter-action@1c5eb12d812966ca84680edc38353a0851c8fd56
@@ -31,8 +32,8 @@ jobs:
         
 
     - name: Buid Linux
-      run: flutter build linux
+      run: flutter build linux --release
     - name: Upload Build Zip
       uses: actions/upload-artifact@v4.3.4
       with:
-        path: ./build/linux
+        path: ./build/linux/x64/release/bundle
