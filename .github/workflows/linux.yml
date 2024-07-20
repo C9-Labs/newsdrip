@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: Install Dependencies
-      run : sudo apt-get install libgtk-3-0 libblkid1 liblzma5 build-essential cmake clang ninja-build
+      run : sudo apt-get install libgtk-3-0 libblkid1 liblzma5 build-essential cmake clang ninja-build gtk+-3.0
       
     - uses: actions/checkout@v4
     - name: set up JDK 11
