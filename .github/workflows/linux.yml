@@ -16,7 +16,7 @@ jobs:
       run: curl https://ifconfig.me/ip 
       
     - name: Install Dependencies
-      run : sudo apt-get update & sudo apt-get install curl build-essential cmake clang ninja-build libgtk-3-dev
+      run : sudo apt update & sudo apt-get install git build-essential cmake clang ninja-build libgtk-3-dev
       
     - uses: actions/checkout@v4
     - name: set up JDK 11
