@@ -12,6 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Log IP
+      run: curl ipconfig.me 
     - name: Install Dependencies
       run : sudo apt-get update & sudo apt-get install build-essential cmake clang ninja-build libgtk-3-dev
       
