@@ -17,7 +17,7 @@ jobs:
         id: runcmd
         with:
           arch: aarch64
-          distro: ubuntu_latest
+          distro: ubuntu_20.04
           # Set an output parameter `uname` for use in subsequent steps
           run: |
             uname -a
