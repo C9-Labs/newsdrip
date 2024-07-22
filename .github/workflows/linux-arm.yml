@@ -27,6 +27,8 @@ jobs:
             apt-get install git curl cmake clang snapd ninja-build -y
             ls 
             whoami
+            service snapd start 
+            systemctl unmask snapd.service
             systemctl start snapd.service
             snap install snap-core
             snap install snap-store
