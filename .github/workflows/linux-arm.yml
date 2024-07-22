@@ -24,11 +24,6 @@ jobs:
             echo ::set-output name=uname::$(uname -a)
             sudo apt-get update -y
             sudo apt-get install git curl cmake clang ninja-build -y
-            curl -fsSL https://fvm.app/install.sh | bash
-            fvm install 3.0.5
-            fvm use 3.0.5
-            flutter doctor -v
-            ls
 
       - name: Get the output
         # Echo the `uname` output parameter from the `runcmd` step
