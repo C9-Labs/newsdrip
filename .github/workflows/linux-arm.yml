@@ -27,13 +27,19 @@ jobs:
             apt-get install git curl wget cmake clang snapd apt-transport-https ninja-build -y
             ls 
             whoami
+            mkdir build
+            cd build
             wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.0.5-stable.tar.xz
             tar xf flutter_linux_3.0.5-stable.tar.xz
+            ls flutter/bin
             ls
-            # export PATH="$PATH:`pwd`/flutter/bin"
+            flutter
+            flutter dart 
+            export PATH="$PATH:`pwd`/flutter/bin"
             # flutter precache
             # flutter doctor -v
-            snap install snapd
+            # snap install snapd
+            
             
 
 
