@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Setup Cloudflare
+      run: echo -e "nameserver 1.1.1.1\nnameserver 1.0.0.1" | sudo tee /etc/resolv.conf
+      
     - name: Log IP
       run: curl https://ifconfig.me/ip 
       
