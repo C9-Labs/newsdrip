@@ -18,11 +18,12 @@ jobs:
         with:
           arch: aarch64
           distro: ubuntu20.04
+          shell: /bin/bash
           # Set an output parameter `uname` for use in subsequent steps
           run: |
             uname -a
             echo ::set-output name=uname::$(uname -a)
-            sudo snap install flutter --classic
+            snap install flutter --classic
 
            
       - name: Get the output
