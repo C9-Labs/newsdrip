@@ -22,7 +22,7 @@ jobs:
         cache: gradle
         
     - name: Flutter action
-      run: sudo snap install flutter
+      run: sudo snap install flutter --classic
       
     - name: Test Installation
       run: flutter doctor -v
