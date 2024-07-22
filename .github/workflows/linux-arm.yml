@@ -11,7 +11,7 @@ jobs:
     runs-on: self-hosted 
     steps:
     - name: Install Dependencies
-      run : sudo apt-get install build-essential cmake clang ninja-build -y
+      run : sudo apt-get install -y build-essential cmake clang ninja-build 
       
     - uses: actions/checkout@v4
     - name: set up JDK 11
