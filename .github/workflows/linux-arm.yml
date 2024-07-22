@@ -33,7 +33,8 @@ jobs:
             tar xf flutter_linux_3.0.5-stable.tar.xz
             ls flutter/bin
             ls
-            flutter
+            cd flutter/bim
+            chmod +x flutter
             flutter dart 
             export PATH="$PATH:`pwd`/flutter/bin"
             # flutter precache
