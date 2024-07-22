@@ -23,7 +23,7 @@ jobs:
             uname -a
             echo ::set-output name=uname::$(uname -a)
             apt-get update -y
-            apt-get install git curl cmake clang ninja-build -y
+            apt-get install git curl cmake clang snapd ninja-build -y
             snap install flutter --classic
 
            
