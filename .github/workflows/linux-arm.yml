@@ -33,7 +33,7 @@ jobs:
       - name: Get the output
         # Echo the `uname` output parameter from the `runcmd` step
         run: |
-          echo "The uname output was ${{ steps.runcmd.outputs }}"
+          echo "The uname output was ${{ steps.runcmd.outputs.value }}"
 
             
 
