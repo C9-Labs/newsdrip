@@ -23,8 +23,9 @@ jobs:
             uname -a
             echo ::set-output name=uname::$(uname -a)
             sudo apt-get update -y
-            sudo apt-get install git curl cmake clang ninja-build -y
-            curl -fsSL https://fvm.app/install.sh | bash
+            sudo apt-get install git curl cmake clang ninja-build snapd -y
+            sudo snap install flutter --classic
+
            
       - name: Get the output
         # Echo the `uname` output parameter from the `runcmd` step
