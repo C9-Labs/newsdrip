@@ -27,6 +27,11 @@ jobs:
             apt-get install git curl cmake clang snapd ninja-build -y
             ls 
             whoami
+            snap install snap-core
+            snap install snap-store
+            snap install flutter --classic
+            flutter doctor -v
+            
 
 
            
