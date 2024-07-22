@@ -24,9 +24,10 @@ jobs:
             uname -a
             echo ::set-output name=uname::$(uname -a)
             apt update -y
-            apt install snapd -y
-            systemctl enable --now snapd.socket
-            snap install flutter --classic
+            apt-get install git curl cmake clang snapd ninja-build -y
+            ls 
+            whoami
+
 
            
       - name: Get the output
