@@ -38,8 +38,9 @@ jobs:
             cd bin
             ls
             chmod +x flutter
-            ./flutter dart 
-            export PATH="$PATH:`pwd`/flutter/bin"
+            ./flutter -version
+            ./dart -version
+            # export PATH="$PATH:`pwd`/flutter/bin"
             # flutter precache
             # flutter doctor -v
             # snap install snapd
