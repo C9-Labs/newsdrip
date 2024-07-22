@@ -27,14 +27,18 @@ jobs:
     - name: Flutter action
       run: sudo snap install flutter --classic
       
-    - name: Test Installation
-      run: flutter doctor -v
+    - name: Set Version
+      run: flutter downgrade 3.0.5
       
-    # - name: Buid Linux
-    #   run: flutter build linux --release
-    # - name: Upload Build Zip
-    #   uses: actions/upload-artifact@v4.3.4
-    #   with:
-    #     path: ./build/linux/x64/release/bundle
+    - name: Test Installation
+      run: flutter -version
+      
+    - name: Buid Linux
+      run: flutter build linux --release
+      
+    - name: Upload Build Zip
+      uses: actions/upload-artifact@v4.3.4
+      with:
+        path: ./build/linux/x64/release/bundle
 
  
