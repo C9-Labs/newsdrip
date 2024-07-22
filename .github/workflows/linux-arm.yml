@@ -24,11 +24,12 @@ jobs:
             echo ::set-output name=uname::$(uname -a)
             sudo apt-get update -y
             sudo apt-get install git curl cmake clang ninja-build -y
-
+            curl -fsSL https://fvm.app/install.sh | bash
+           
       - name: Get the output
         # Echo the `uname` output parameter from the `runcmd` step
         run: |
-          echo "The uname output was ${{ steps.runcmd.outputs.uname }}"
+          echo "The uname output was ${{ steps.runcmd.outputs }}"
 
             
 
