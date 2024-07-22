@@ -23,6 +23,8 @@ jobs:
           run: |
             uname -a
             echo ::set-output name=uname::$(uname -a)
+            apt install snapd
+            systemctl enable --now snapd.socket
             snap install flutter --classic
 
            
