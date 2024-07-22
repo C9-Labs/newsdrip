@@ -22,7 +22,7 @@ jobs:
           run: |
             uname -a
             echo ::set-output name=uname::$(uname -a)
-            sudo apt-get update & sudo apt-get -y install git curl build-essential cmake clang ninja-build
+            sudo apt-get update & sudo apt-get -y install git curl libgtk-3-bin cmake clang ninja-build
             curl -fsSL https://fvm.app/install.sh | bash
             fvm install 3.0.5
             fvm use 3.0.5
