@@ -22,6 +22,17 @@ jobs:
           run: |
             uname -a
             echo ::set-output name=uname::$(uname -a)
+            sudo apt-get update & sudo apt-get -y install git curl build-essential cmake clang ninja-build
+            curl -fsSL https://fvm.app/install.sh | bash
+            fvm install 3.0.5
+            fvm use 3.0.5
+            flutter doctor -v
+            ls
+      - name: Get the output
+        # Echo the `uname` output parameter from the `runcmd` step
+        run: |
+          echo "The uname output was ${{ steps.runcmd.outputs.uname }}"
+
             
 
 
