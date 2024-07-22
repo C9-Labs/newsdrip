@@ -22,11 +22,9 @@ jobs:
         cache: gradle
         
     - name: Flutter action
-      run: wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.0.5-stable.tar.xz & tar -xf flutter_linux_3.0.5-stable.tar.xz -C /usr/bin/
-    
-    - name: Add Flutter to Path   
-      run: echo 'export PATH="/usr/bin/flutter/bin:$PATH"' >> ~/.bash_profile
-        
+      run: wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.0.5-stable.tar.xz
+    - run: tar -xf flutter_linux_3.0.5-stable.tar.xz -C /usr/bin/
+    - run: export PATH="/usr/bin/flutter/bin:$PATH"        
     - name: Test Installation
       run: flutter doctor -v
       
