@@ -38,7 +38,7 @@ jobs:
             cd bin
             ls
             chmod +x flutter
-            ./flutter -version
+            # ./flutter -version
             ./dart -version
             cd ../..
             export PATH="$PATH:`pwd`/flutter/bin"
