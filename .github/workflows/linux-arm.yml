@@ -16,14 +16,14 @@ jobs:
         name: Run commands
         id: runcmd
         with:
-          arch: armv6
-          distro: bullseye
+          arch: armv7
+          distro: ubuntu22.04
           # Set an output parameter `uname` for use in subsequent steps
           run: |
             uname -a
             echo ::set-output name=uname::$(uname -a)
             sudo apt-get update -y
-            sudo apt-get install git curl cmake clang ninja-build snapd -y
+            sudo apt-get install git curl cmake clang ninja-build -y
             sudo snap install flutter --classic
 
            
