@@ -31,7 +31,7 @@ jobs:
       run: flutter downgrade 3.0.5
       
     - name: Test Installation
-      run: flutter -version
+      run: flutter -version & ls
       
     - name: Buid Linux
       run: flutter build linux --release
