@@ -6,9 +6,17 @@ Supported Platforms include Linux, MacOS, Windows and iOS
 
 ## Getting Started
 Clone This Git Repo Into Your Directory
-Install Dependencices
-Run Project by Attaching Device
 
+``` 
+git clone https://github.com/c9-labs/newsdrip.git
+```
+
+Install Dependencices ```* Required for Linux ```
+
+Run Project by Attaching Device
+``` 
+flutter run <device name>
+```
 ## New to Flutter ?
 A few resources to get you started if this is your first Flutter project:
 
