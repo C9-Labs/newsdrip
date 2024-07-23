@@ -22,7 +22,7 @@ Windows: [release.zip ](https://github.com/C9-Labs/newsdrip/releases/download/v1
 
 Android: [newsdrip.apk](https://github.com/C9-Labs/newsdrip/releases/download/v1/newsdrip-release.apk)
 
-Linux: 
+Linux: [newsdrip_linux_x86](https://github.com/C9-Labs/newsdrip/releases/download/v1/newsdrip_linux_x86.zip)
 
 MacOS: [Help Required]
 
