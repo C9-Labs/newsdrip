@@ -27,3 +27,9 @@ Linux: [newsdrip_linux_x86](https://github.com/C9-Labs/newsdrip/releases/downloa
 MacOS: [Help Required]
 
 iOS: [Help Required]
+
+## Development Status (Rolling)
+[![Linux CI](https://github.com/C9-Labs/newsdrip/actions/workflows/linux.yml/badge.svg)](https://github.com/C9-Labs/newsdrip/actions/workflows/linux.yml)
+[![Linux ARM CI](https://github.com/C9-Labs/newsdrip/actions/workflows/linux-arm.yml/badge.svg)](https://github.com/C9-Labs/newsdrip/actions/workflows/linux-arm.yml)
+[![Android CI](https://github.com/C9-Labs/newsdrip/actions/workflows/android.yml/badge.svg)](https://github.com/C9-Labs/newsdrip/actions/workflows/android.yml)
+[![Windows CI](https://github.com/C9-Labs/newsdrip/actions/workflows/windows.yml/badge.svg)](https://github.com/C9-Labs/newsdrip/actions/workflows/windows.yml)
