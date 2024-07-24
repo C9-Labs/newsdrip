@@ -31,6 +31,12 @@ jobs:
     - name: Test Installation
       run: flutter doctor -v
       
+    - name: Git Clone
+      run: git clone https://github.com/c9-labs/newsdrip.git
+      
+    - name: Enter Directory
+      run: cd newsdrip
+      
     - name: Test Installation Directory
       run: ls
       
