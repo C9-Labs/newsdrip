@@ -14,17 +14,20 @@ jobs:
       run: echo -e "nameserver 1.1.1.1\nnameserver 1.0.0.1" | sudo tee /etc/resolv.conf
       
     - name: Install Dependencies
-      run : sudo apt-get install -y build-essential cmake clang ninja-build curl wget
+      run : sudo apt-get install -y build-essential cmake clang ninja-build curl wget snapd
 
-    - uses: actions/checkout@v4
+    # - name: Flutter action
+    #   # You may pin to the exact commit or the version.
+    #   # uses: subosito/flutter-action@1c5eb12d812966ca84680edc38353a0851c8fd56
+    #   uses: subosito/flutter-action@v2.14.0
+    #   with:
+    #     flutter-version: 3.0.5
+    - name: Snap Install
+      run: sudo snap install snap core
 
-    - name: Flutter action
-      # You may pin to the exact commit or the version.
-      # uses: subosito/flutter-action@1c5eb12d812966ca84680edc38353a0851c8fd56
-      uses: subosito/flutter-action@v2.14.0
-      with:
-        flutter-version: 3.0.5
-        
+    - name: Flutter Install
+      run: sudo snap intall flutter --classic
+      
     - name: Test Installation
       run: flutter doctor -v
       
