@@ -25,14 +25,30 @@ jobs:
     - name: Snap Install
       run: sudo snap install core
 
+      
     - name: Flutter Install
-      run: sudo snap install flutter --classic
+      run: mkdir build
       
-    - name: Migrate to Stable
-      run: flutter channel stable
+
+    - name: Flutter Install
+      run: wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.22.3-stable.tar.xz
+      working-directory: build
+
+    - name: Flutter Install
+      run: tar xf flutter_linux_3.0.5-stable.tar.xz
+      working-directory: build
+
+
+    - name: Flutter Install
+      run: export PATH="$PATH:`pwd`/flutter/bin"
+      working-directory: build
       
-    - name: Set Version to 3.0.5
-      run: flutter downgrade 3.0.5
+
+    # - name: Migrate to Stable
+    #   run: flutter channel stable
+      
+    # - name: Set Version to 3.0.5
+    #   run: flutter downgrade 3.0.5
       
     - name: Test Installation
       run: flutter doctor -v
