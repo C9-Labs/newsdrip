@@ -31,7 +31,7 @@ jobs:
       
 
     - name: Flutter Install
-      run: wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.22.3-stable.tar.xz
+      run: wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.0.5-stable.tar.xz
       working-directory: build
 
     - name: Flutter Install
