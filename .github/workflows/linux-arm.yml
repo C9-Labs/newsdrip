@@ -29,6 +29,9 @@ jobs:
       run: sudo snap install flutter --classic
       
     - name: Test Installation
+      run: flutter downgrade 3.0.5
+      
+    - name: Test Installation
       run: flutter doctor -v
       
     - name: Git Clone
