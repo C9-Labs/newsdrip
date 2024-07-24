@@ -41,7 +41,8 @@ jobs:
       run: ls
       
     - name: Buid Linux
-      run: cd newsdrip & flutter build linux --release
+      run: flutter build linux --release
+      working-directory: newsdrip
       
     - name: Upload Build Zip
       uses: actions/upload-artifact@v4.3.4
