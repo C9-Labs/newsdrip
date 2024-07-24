@@ -31,8 +31,8 @@ jobs:
     - name: Test Installation
       run: flutter doctor -v
       
-    - name: Test Installation
-      run: flutter -version & ls
+    - name: Test Installation Directory
+      run: ls
       
     - name: Buid Linux
       run: flutter build linux --release
