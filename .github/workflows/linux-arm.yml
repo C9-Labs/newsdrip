@@ -23,7 +23,7 @@ jobs:
     #   with:
     #     flutter-version: 3.0.5
     - name: Snap Install
-      run: sudo snap install snap core
+      run: sudo snap install core
 
     - name: Flutter Install
       run: sudo snap intall flutter --classic
