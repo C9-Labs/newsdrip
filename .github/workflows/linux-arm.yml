@@ -26,7 +26,7 @@ jobs:
       run: sudo snap install core
 
     - name: Flutter Install
-      run: sudo snap intall flutter --classic
+      run: sudo snap install flutter --classic
       
     - name: Test Installation
       run: flutter doctor -v
