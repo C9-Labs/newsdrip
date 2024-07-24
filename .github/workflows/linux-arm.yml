@@ -40,7 +40,7 @@ jobs:
 
 
     - name: Flutter Install
-      run: export PATH="$PATH:`pwd`/flutter/bin"
+      run: export PATH="$PATH:`pwd`/flutter/bin" / flutter doctor -v
       working-directory: build
       
 
