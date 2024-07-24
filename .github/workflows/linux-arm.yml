@@ -28,7 +28,10 @@ jobs:
     - name: Flutter Install
       run: sudo snap install flutter --classic
       
-    - name: Test Installation
+    - name: Migrate to Stable
+      run: flutter channel stable
+      
+    - name: Set Version to 3.0.5
       run: flutter downgrade 3.0.5
       
     - name: Test Installation
