@@ -52,7 +52,6 @@ jobs:
       
     - name: Test Installation
       run: flutter doctor -v
-      working-directory: newsdrip
 
       
     - name: Git Clone
