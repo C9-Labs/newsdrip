@@ -52,13 +52,13 @@ jobs:
     - name: Test Installation Directory
       run: ls
       
-    - name: Buid Linux
+    - name: Build Linux for ARM
       run: flutter build linux --release
       working-directory: newsdrip
       
     - name: Upload Build Zip
       uses: actions/upload-artifact@v4.3.4
       with:
-        path: newsdrip/build/linux/
+        path: newsdrip/build/linux/arm64/release/bundle
 
     
