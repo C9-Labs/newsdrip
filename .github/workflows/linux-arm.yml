@@ -40,7 +40,7 @@ jobs:
 
 
     - name: Flutter Install
-      run: mv -v flutter/bin/* /usr/bin/
+      run: mv -v ./ /usr/bin/
       working-directory: build
       
 
