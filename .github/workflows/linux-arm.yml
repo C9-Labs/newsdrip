@@ -25,22 +25,8 @@ jobs:
     - name: Snap Install
       run: sudo snap install core
 
-      
-    - name: Flutter Install
-      run: mkdir build
-      
 
-    - name: Flutter Install
-      run: wget https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.0.5-stable.tar.xz
-      working-directory: build
 
-    - name: Flutter Install
-      run: tar xf flutter_linux_3.0.5-stable.tar.xz
-      working-directory: build
-
-    - name: Flutter Install
-      run: mv -v ./* /usr/bin/
-      working-directory: build
     - name: Install Flutter
       # You may pin to the exact commit or the version.
       # uses: britannio/action-install-flutter@a486b7e3148e54a76390d849100b9dee819ff810
@@ -50,13 +36,6 @@ jobs:
         version: 3.0.5
               
 
-
-    - name: Migrate to Stable
-      run: ls /usr/bin
-      
-    # - name: Set Version to 3.0.5
-    #   run: flutter downgrade 3.0.5
-      
     - name: Test Installation
       run: flutter doctor -v
 
@@ -71,12 +50,12 @@ jobs:
       run: ls
       
     - name: Buid Linux
-      run: ../build/flutter/bin/flutter build linux --release
+      run: flutter build linux --release
       working-directory: newsdrip
       
     - name: Upload Build Zip
       uses: actions/upload-artifact@v4.3.4
       with:
-        path: ./newsdrip/build/linux/
+        path: newsdrip/build/linux/
 
     
