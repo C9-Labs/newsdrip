@@ -36,12 +36,12 @@ jobs:
 
     - name: Flutter Install
       run: tar xf flutter_linux_3.0.5-stable.tar.xz
-      working-directory: build
+      working-directory: /usr/bin
 
 
-    - name: Flutter Install
-      run: mv -v ./ /usr/bin/
-      working-directory: build
+    # - name: Flutter Install
+    #   run: mv -v ./flutter/bin/* /usr/bin/
+    #   working-directory: build
       
 
     - name: Migrate to Stable
