@@ -14,7 +14,7 @@ jobs:
       run: echo -e "nameserver 1.1.1.1\nnameserver 1.0.0.1" | sudo tee /etc/resolv.conf
       
     - name: Install Dependencies
-      run : sudo apt-get install -y build-essential cmake clang ninja-build curl wget snapd
+      run : sudo apt-get install -y build-essential git cmake clang ninja-build curl wget snapd
 
     # - name: Flutter action
     #   # You may pin to the exact commit or the version.
@@ -52,7 +52,7 @@ jobs:
       
     - name: Test Installation
       run: flutter doctor -v
-      working-directory: build
+      working-directory: newsdrip
 
       
     - name: Git Clone
