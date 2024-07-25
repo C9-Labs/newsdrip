@@ -40,7 +40,7 @@ jobs:
 
 
     - name: Flutter Install
-      run: export PATH="$PATH:`pwd`/flutter/bin" & flutter doctor -v
+      run: export PATH="$PATH:`pwd`/flutter/bin"
       working-directory: build
       
 
@@ -52,6 +52,8 @@ jobs:
       
     - name: Test Installation
       run: flutter doctor -v
+      working-directory: build
+
       
     - name: Git Clone
       run: git clone https://github.com/c9-labs/newsdrip.git
