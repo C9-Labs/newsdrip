@@ -40,18 +40,18 @@ jobs:
 
 
     - name: Flutter Install
-      run: export PATH="$PATH:`pwd`/flutter/bin"
+      run: mv -rf flutter/bin /usr/bin
       working-directory: build
       
 
-    # - name: Migrate to Stable
-    #   run: flutter channel stable
+    - name: Migrate to Stable
+      run: ls /usr/bin
       
     # - name: Set Version to 3.0.5
     #   run: flutter downgrade 3.0.5
       
     - name: Test Installation
-      run: ./flutter/bin/flutter doctor -v
+      run: flutter doctor -v
       working-directory: build
 
       
