@@ -32,10 +32,9 @@ Android: [newsdrip.apk](https://github.com/C9-Labs/newsdrip/releases/download/v1
 
 Linux: [newsdrip_linux_x86](https://github.com/C9-Labs/newsdrip/releases/download/v1/newsdrip_linux_x86.zip)
 
-Linux(armv6/armv7): Have armv6/armv7? Open [Issue](https://github.com/C9-Labs/newsdrip/issues/new?body=Support%20requested%20for%20armv6/armv7&title=Feat:%20arm32%20Support%20Required&labels=immediate&)
-
 Linux (arm64): [newsdrip_linux_arm64](https://github.com/C9-Labs/newsdrip/releases/download/v1/.zip)
 
+Linux(armv6/armv7): Have armv6/armv7? [Open Issue](https://github.com/C9-Labs/newsdrip/issues/new?body=Support%20requested%20for%20armv6/armv7&title=Feat:%20arm32%20Support%20Required&labels=immediate&)
 
 MacOS: [Help Required]
 
