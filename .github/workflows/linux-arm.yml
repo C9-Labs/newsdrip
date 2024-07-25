@@ -41,7 +41,15 @@ jobs:
     - name: Flutter Install
       run: mv -v ./* /usr/bin/
       working-directory: build
-      
+    - name: Install Flutter
+      # You may pin to the exact commit or the version.
+      # uses: britannio/action-install-flutter@a486b7e3148e54a76390d849100b9dee819ff810
+      uses: britannio/action-install-flutter@v1.1
+      with:
+        # The channel/version of Flutter to be used e.g., beta or 2.0.0
+        version: 3.0.5
+              
+
 
     - name: Migrate to Stable
       run: ls /usr/bin
