@@ -35,7 +35,7 @@ jobs:
       working-directory: build
 
     - name: Flutter Install
-      run: tar xf flutter_linux_3.0.5-stable.tar.xz /usr/bin/flutter
+      run: tar xf flutter_linux_3.0.5-stable.tar.xz /usr/bin
       working-directory: build
 
     # - name: Flutter Install
