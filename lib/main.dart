@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
   var ds;
   String _source = 'bbc';
   void getdata([String source = 'bbc']) {
-    final res = http.get(Uri.parse('http://endpoint.api2.news/' + source));
+    final res = http.get(Uri.parse('https://endpoint.api2.news/' + source));
     res.asStream().listen((event) {
       if (event.statusCode == 200) {
         print(jsonDecode(event.body)[0]['title']);
