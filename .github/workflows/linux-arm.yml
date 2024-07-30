@@ -1,0 +1,64 @@
+name: Linux ARM CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: warp-custom-build-arm64
+    steps:
+    - name: Configure Cloudflare DNS
+      run: echo -e "nameserver 1.1.1.1\nnameserver 1.0.0.1" | sudo tee /etc/resolv.conf
+  
+    - name: Update Dependencies
+      run : sudo apt-get update -y
+    
+    - name: Install Dependencies
+      run : sudo apt-get install -y build-essential git cmake clang ninja-build curl wget snapd libgtk-3-dev
+
+    # - name: Flutter action
+    #   # You may pin to the exact commit or the version.
+    #   # uses: subosito/flutter-action@1c5eb12d812966ca84680edc38353a0851c8fd56
+    #   uses: subosito/flutter-action@v2.14.0
+    #   with:
+    #     flutter-version: 3.0.5
+    - name: Snap Install
+      run: sudo snap install core
+
+
+
+    - name: Install Flutter
+      # You may pin to the exact commit or the version.
+      # uses: britannio/action-install-flutter@a486b7e3148e54a76390d849100b9dee819ff810
+      uses: britannio/action-install-flutter@v1.1
+      with:
+        # The channel/version of Flutter to be used e.g., beta or 2.0.0
+        version: 3.0.5
+              
+
+    - name: Test Installation
+      run: flutter doctor -v
+
+      
+    - name: Git Clone
+      run: git clone https://github.com/c9-labs/newsdrip.git
+      
+    - name: Enter Directory
+      run: cd newsdrip
+      
+    - name: Test Installation Directory
+      run: ls
+      
+    - name: Build Linux for ARM
+      run: flutter build linux --release
+      working-directory: newsdrip
+      
+    - name: Upload Build Zip
+      uses: actions/upload-artifact@v4.3.4
+      with:
+        path: newsdrip/build/linux/arm64/release/bundle
+
+    
