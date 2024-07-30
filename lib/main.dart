@@ -20,18 +20,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-          // This is the theme of your application.
-          //
-          // Try running your application with "flutter run". You'll see the
-          // application has a blue toolbar. Then, without quitting the app, try
-          // changing the primarySwatch below to Colors.green and then invoke
-          // "hot reload" (press "r" in the console where you ran "flutter run",
-          // or simply save your changes to "hot reload" in a Flutter IDE).
-          // Notice that the counter didn't reset back to zero; the application
-          // is not restarted.
-          useMaterial3: true,
-          primaryColor: Colors.red,
-          backgroundColor: Colors.black12),
+        // This is the theme of your application.
+        //
+        // Try running your application with "flutter run". You'll see the
+        // application has a blue toolbar. Then, without quitting the app, try
+        // changing the primarySwatch below to Colors.green and then invoke
+        // "hot reload" (press "r" in the console where you ran "flutter run",
+        // or simply save your changes to "hot reload" in a Flutter IDE).
+        // Notice that the counter didn't reset back to zero; the application
+        // is not restarted.
+        useMaterial3: true,
+        primaryColor: Colors.red,
+        // backgroundColor: Colors.black12
+      ),
       home: const MyHomePage(title: "Today's News Headlines"),
     );
   }
@@ -87,15 +88,26 @@ class _MyHomePageState extends State<MyHomePage> {
     return true;
   }
 
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
+  void openModal() {
+    showModalBottomSheet(
+        context: context,
+        builder: (BuildContext context) {
+          return Container(
+            child: Column(
+              children: [
+                Text("Load from Source"),
+                TextField(
+                  decoration: InputDecoration(
+                    hintText: "Enter Source Name",
+                  ),
+                  onSubmitted: (value) {
+                    setSource(value);
+                  },
+                )
+              ],
+            ),
+          );
+        });
   }
 
   @override
@@ -107,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-      backgroundColor: Colors.black,
+      // backgroundColor: Colors.black,
       appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
@@ -122,7 +134,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Center(
               child: Text(
                 '$_source'.toUpperCase(),
-                style: TextStyle(color: Colors.white, fontSize: 30),
+                // style: TextStyle(color: Colors.white, fontSize: 30),
               ),
             ),
             Center(
@@ -162,7 +174,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Text(
               'Source: ' + _source.toUpperCase(),
               key: Key("source"),
-              style: TextStyle(color: Colors.white, fontSize: 30),
+              // style: TextStyle(color: Colors.white, fontSize: 30),
             ),
             // Build a Card List
             if (ds != null)
@@ -231,7 +243,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+        onPressed: openModal,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ), // This trailing comma makes auto-formatting nicer for build methods.
