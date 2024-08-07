@@ -14,13 +14,15 @@ Newsdrip utilises [API2NEWS](https://api2.news) API to retrive various
 ## Releases
 Checkout Pre-Built Binary in [Releases](https://github.com/C9-Labs/newsdrip/releases)
 
-Windows: [release.zip ](https://github.com/C9-Labs/newsdrip/releases/download/v1/newsdrip_windows.zip)
+Windows(x64): [newsdrip_windows_x64.zip ](https://github.com/C9-Labs/newsdrip/releases/download/v1.1/newsdrip_windows_x64.zip)
 
-Android: [newsdrip.apk](https://github.com/C9-Labs/newsdrip/releases/download/v1/newsdrip-release.apk)
+Windows (ARM): Have Windows for ARM? [Open Issue](https://github.com/C9-Labs/newsdrip/issues/new?body=Support%20requested%20for%20windows%20for%20ARM&title=Feat:%20arm32%20Support%20Required&labels=immediate&)
 
-Linux: [newsdrip_linux_x86](https://github.com/C9-Labs/newsdrip/releases/download/v1/newsdrip_linux_x86.zip)
+Android: [newsdrip_android.apk](https://github.com/C9-Labs/newsdrip/releases/download/v1.1/newsdrip_android.apk)
 
-Linux (arm64): [newsdrip_linux_arm64](https://github.com/C9-Labs/newsdrip/releases/download/v1/.zip)
+Linux: [newsdrip_linux_x64.zip](https://github.com/C9-Labs/newsdrip/releases/download/v1.1/newsdrip_linux_x64.zip)
+
+Linux (arm64): [newsdrip_linux_arm64.zip](https://github.com/C9-Labs/newsdrip/releases/download/v1.1/newsdrip_linux_arm64.zip)
 
 Linux(armv6/armv7): Have armv6/armv7? [Open Issue](https://github.com/C9-Labs/newsdrip/issues/new?body=Support%20requested%20for%20armv6/armv7&title=Feat:%20arm32%20Support%20Required&labels=immediate&)
 
