@@ -12,6 +12,9 @@ git clone https://github.com/c9-labs/newsdrip.git
 ```
 
 Install Dependencices ```* Required for Linux ```
+```
+apt install cmake clang ninja-build libgtk-3-dev
+```
 
 Run Project by Attaching Device
 ``` 
