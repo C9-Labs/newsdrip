@@ -45,7 +45,7 @@ jobs:
             
       
     - name: Buid Linux
-      working-directory: .
+      working-directory: ./newsdrip
       run: |
             ls
       
