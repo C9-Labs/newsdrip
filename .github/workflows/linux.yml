@@ -45,7 +45,7 @@ jobs:
             
       
     - name: Buid Linux
-      working-directory: ./newsdrip
+      working-directory: ..
       run: |
             flutter build linux --release
       
