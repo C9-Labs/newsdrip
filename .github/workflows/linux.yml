@@ -45,9 +45,9 @@ jobs:
             
       
     - name: Buid Linux
-      working-directory: /home/runner/work/newsdrip/newsdrip
       run: |
-            git clone https://github.com/C9-Labs/newsdrip.git            
+            git clone https://github.com/C9-Labs/newsdrip.git
+            cd newsdrip
             flutter build linux --release
       
     - name: Upload Build Zip
