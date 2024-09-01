@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
     final res = http.get(Uri.parse('https://endpoint.api2.news/' + source));
     res.asStream().listen((event) {
       if (event.statusCode == 200) {
-        print(jsonDecode(event.body)[0]['title']);
+        // print(jsonDecode(event.body)[0]['title']);
         setState(() {
           ds = jsonDecode(event.body);
         });
@@ -182,7 +182,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                   GestureDetector(
                       onTap: () {
-                        print(i['url'] == '');
+                        // print(i['url'] == '');
                         launchUrl(new Uri(
                             scheme: 'https',
                             host: i['url'] != ''
