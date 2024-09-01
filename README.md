@@ -3,7 +3,11 @@ Simple News App with ability to switch from Multiple News Sources with a Single 
 
 Supported Platforms include Linux, MacOS, Windows and iOS
 
-Supported Arch x86,x64,armhf,arm64
+Supported Arch:
+ - x86
+ - amd64
+ - armhf
+ - arm64/aarch64
 
 Newsdrip utilises [API2NEWS](https://api2.news) API to retrive various
 
