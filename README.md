@@ -9,7 +9,6 @@ Supported Arch:
  - armhf
  - arm64/aarch64
 
-Newsdrip utilises [API2NEWS](https://api2.news) API to retrive various
 
 ##   Some Screenshots
 ![image](https://github.com/user-attachments/assets/dcdee28b-2f01-4534-86eb-3fba79ec805b)
@@ -62,3 +61,4 @@ A few resources to get you started if this is your first Flutter project:
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
+Newsdrip utilises [api2.news](https://api2.news) API to retrive various
