@@ -47,7 +47,7 @@ jobs:
     - name: Buid Linux
       working-directory: ./newsdrip
       run: |
-            ls
+            flutter build linux --release
       
     - name: Upload Build Zip
       uses: actions/upload-artifact@v4.3.4
