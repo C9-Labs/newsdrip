@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'NewsDrip - Daily News Headlines',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -182,11 +182,11 @@ class _MyHomePageState extends State<MyHomePage> {
                 Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
                   GestureDetector(
                       onTap: () {
-                        print(i['link'] == '');
+                        print(i['url'] == '');
                         launchUrl(new Uri(
                             scheme: 'https',
-                            host: i['link'] != ''
-                                ? i['link']
+                            host: i['url'] != ''
+                                ? i['url']
                                     .toString()
                                     .replaceAll("http://", "")
                                     .replaceAll("https://", "")
@@ -196,13 +196,13 @@ class _MyHomePageState extends State<MyHomePage> {
                                     .replaceAll("http://", "")
                                     .replaceAll("https://", "")
                                     .split("/")[0],
-                            path: i['link'] != ''
-                                ? i['link']
+                            path: i['url'] != ''
+                                ? i['url']
                                     .toString()
                                     .replaceAll("http://", "")
                                     .replaceAll("https://", "")
                                     .replaceAll(
-                                        i['link']
+                                        i['url']
                                             .toString()
                                             .replaceAll("http://", "")
                                             .replaceAll("https://", "")
@@ -231,7 +231,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   fontSize: 20,
                                 )),
                             Html(
-                                data: i['summary'],
+                                data: i['description'],
                                 style: {"body": Style(color: Colors.blueGrey)})
                           ]))
                 ])
