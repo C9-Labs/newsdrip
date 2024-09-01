@@ -1,4 +1,4 @@
-# Newsdrip
+lin# Newsdrip
 Simple News App with ability to switch from Multiple News Sources with a Single Click.
 
 Supported Platforms include Linux, MacOS, Windows and iOS
@@ -61,4 +61,4 @@ A few resources to get you started if this is your first Flutter project:
 - [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-Newsdrip utilises [api2.news](https://api2.news) API to retrive various
+Newsdrip utilises [api2.news](https://api2.news) API to retrive various headlines.
