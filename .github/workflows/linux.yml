@@ -46,7 +46,9 @@ jobs:
       
     - name: Buid Linux
       working-directory: /home/runner/work/newsdrip/newsdrip
-      run: sudo ld & sudo ls
+      run: |
+            git clone https://github.com/C9-Labs/newsdrip.git            
+            flutter build linux --release
       
     - name: Upload Build Zip
       uses: actions/upload-artifact@v4.3.4
