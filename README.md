@@ -1,4 +1,4 @@
-lin# Newsdrip
+# Newsdrip
 Simple News App with ability to switch from Multiple News Sources with a Single Click.
 
 Supported Platforms include Linux, MacOS, Windows and iOS
