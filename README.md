@@ -17,15 +17,15 @@ Supported Arch:
 ## Releases
 Checkout Pre-Built Binary in [Releases](https://github.com/C9-Labs/newsdrip/releases)
 
-Windows(x64): [newsdrip_windows_x64.zip ](https://github.com/C9-Labs/newsdrip/releases/download/v1.1/newsdrip_windows_x64.zip)
+Windows(x64): [newsdrip_windows_x64.zip ](https://github.com/C9-Labs/newsdrip/releases/download/v1.2/newsdrip_windows_x64.zip)
 
 Windows (ARM): Have Windows for ARM? [Open Issue](https://github.com/C9-Labs/newsdrip/issues/new?body=Support%20requested%20for%20windows%20for%20ARM&title=Feat:%20arm32%20Support%20Required&labels=immediate&)
 
-Android: [newsdrip_android.apk](https://github.com/C9-Labs/newsdrip/releases/download/v1.1/newsdrip_android.apk)
+Android: [newsdrip_android.apk](https://github.com/C9-Labs/newsdrip/releases/download/v1.2/newsdrip_android_arm.apk)
 
-Linux: [newsdrip_linux_x64.zip](https://github.com/C9-Labs/newsdrip/releases/download/v1.1/newsdrip_linux_x64.zip)
+Linux: [newsdrip_linux_x64.zip](https://github.com/C9-Labs/newsdrip/releases/download/v1.2/newsdrip_linux_x64.zip)
 
-Linux (arm64): [newsdrip_linux_arm64.zip](https://github.com/C9-Labs/newsdrip/releases/download/v1.1/newsdrip_linux_arm64.zip)
+Linux (arm64): [newsdrip_linux_arm64.zip](https://github.com/C9-Labs/newsdrip/releases/download/v1.2/newsdrip_linux_arm64.zip)
 
 Linux(armv6/armv7): Have armv6/armv7? [Open Issue](https://github.com/C9-Labs/newsdrip/issues/new?body=Support%20requested%20for%20armv6/armv7&title=Feat:%20arm32%20Support%20Required&labels=immediate&)
 
